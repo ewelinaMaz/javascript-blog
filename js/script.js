@@ -45,11 +45,11 @@
       const titleList = document.querySelector(optTitleListSelector);
       titleList.innerHTML = '';
       console.log(titleList);
-      /*Get article id */
-      const articles = document.querySelector(optArticleSelector);
+      /*[DONE]Get article id */
+      const articles = document.querySelectorAll(optArticleSelector);
 
       for (let article of articles) {
-        const articleId = articles.getArgument("Id");
+        const articleId = article.getAttribute("Id");
       }
       /*find the title element*/
       /*get the title from title element*/
