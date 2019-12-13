@@ -51,8 +51,10 @@
       for (let article of articles) {
         const articleId = article.getAttribute("Id");
       }
-      /*find the title element*/
-      /*get the title from title element*/
+      /*[DONE]find the title element*/
+      const articleTitle = article.querySelector(optTitleSelector).innerHTML;
+      /*[In progress]get the title from title element*/
+      const linkHTML ='<li><a href="#"><span></span></a></li>';
       /*create html of the link*/
       /*insert html into titleList*/
     }
