@@ -8,7 +8,7 @@
 body {
   background: #fff;
   font-family: "Source Sans Pro", sans-serif;
-  color: #444;
+  color: #1B183E;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.7;
@@ -71,10 +71,18 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  z-index: 1;
 }
 
 .list .active {
   font-weight: bold;
+  line-height: 1.7;
+  z-index: 2;
+}
+
+.list li a {
+  text-decoration: none;
+  color: #000000;
 }
 
 .list-horizontal li {
@@ -87,12 +95,19 @@ body {
 }
 
 /* Post */
+.posts {
+  position: relative;
+}
+
 .post {
-  display: none;
+  opacity: 0;
+  position: absolute;
 }
 
 .post.active {
-  display: block;
+  transition: 1s;
+  opacity: 2;
+  position: relative;
 }
 
 .post-author {

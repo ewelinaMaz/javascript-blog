@@ -18,7 +18,7 @@ $font-text: 'Source Sans Pro', sans-serif;
 body {
   background: $color-light;
   font-family: $font-text;
-  color: $color-dark;
+  color: #1B183E;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.7;
@@ -40,7 +40,6 @@ body {
     color: lighten($color-dark, 20%);
   }
 }
-
 /* Layout */
 
 .wrapper {
@@ -64,6 +63,7 @@ body {
   border-radius: 5px;
 }
 
+
 /* Logo */
 
 .logo {
@@ -80,9 +80,16 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  z-index: 1;
   .active {
     font-weight: bold;
+    line-height: 1.7;
+    z-index: 2;
   }
+}
+.list li a {
+  text-decoration: none;
+  color:#000000;
 }
 
 .list-horizontal {
@@ -100,13 +107,20 @@ body {
 }
 
 /* Post */
+.posts {
+  position: relative;
+}
 
 .post {
-  display: none;
+  opacity: 0;
+  position: absolute;
   &.active {
-    display: block;
+    transition: 1s;
+    opacity: 2;
+    position: relative;
   }
 }
+
 
 .post-author {
   font-style: italic;
