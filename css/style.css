@@ -122,4 +122,8 @@ body {
 .post-tags p {
   margin: 0 10px 0 0;
 }
+
+.post-tags ul li {
+  margin-right: 5px;
+}
 /*# sourceMappingURL=style.css.map */
