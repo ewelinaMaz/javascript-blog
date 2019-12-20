@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   function titleClickHandler(event) {
-=======
-  const titleClickHandler = function(event) {
->>>>>>> ab5d37b5bb0e4846c04e67d0636c73ca0a2a7c08
     event.preventDefault();
     const clickedElement = this;
     console.log('Link was clicked!');
@@ -34,24 +30,16 @@
 
     /*[Done] add class 'active' to the correct article */
     targetArticle.classList.add('active');
-<<<<<<< HEAD
   }
 
-=======
-  };
->>>>>>> ab5d37b5bb0e4846c04e67d0636c73ca0a2a7c08
   const optArticleSelector = '.post',
     optTitleSelector = '.post-title',
     optTitleListSelector = '.titles',
     optArticleTagsSelector = '.post-tags .list',
-<<<<<<< HEAD
     optArticleAuthorSelector = '.post-author',
     optCloudClassCount = 5;
   optCloudClassPrefix = 'tag-size-',
   optTagsListSelector = '.tags .list';
-=======
-    optArticleAuthorSelector = '.post-author';
->>>>>>> ab5d37b5bb0e4846c04e67d0636c73ca0a2a7c08
 
   function generateTitleLinks(customSelector = '') {
     /* [DONE]remove contents of titleList*/
@@ -78,7 +66,6 @@
   /*[insertAdjacentHTML-generuje listę linkó od tyłu?]titleList.insertAdjacentHTML('afterbegin', linkHTML)*/
     }
     titleList.innerHTML = html;
-<<<<<<< HEAD
 
     const links = document.querySelectorAll('.titles a');
     for (let link of links) {
@@ -113,17 +100,6 @@
   function generateTags() {
     /*[NEW] create a new variable allTags with an empty object */
     let allTags = {};
-=======
- 
-		const links = document.querySelectorAll('.titles a');
-  	for (let link of links) {
-    	link.addEventListener('click', titleClickHandler);
-  	}
-	}
-  generateTitleLinks();
-
-  function generateTags() {
->>>>>>> ab5d37b5bb0e4846c04e67d0636c73ca0a2a7c08
 
     /* find all articles */
     const articles = document.querySelectorAll(optArticleSelector);
@@ -156,7 +132,6 @@
         console.log(linkHTML);
         /* add generated code to html variable */
         html = html + linkHTML;
-<<<<<<< HEAD
         /*[NEW] check if this link is NOT already in allTags */
         if (!allTags.hasOwnProperty(tag)) {
           /*[NEW] add tag to allTags object*/
@@ -165,15 +140,12 @@
           allTags[tag]++;
         }
 
-=======
->>>>>>> ab5d37b5bb0e4846c04e67d0636c73ca0a2a7c08
         /* END LOOP: for each tag */
       }
       /* insert HTML of all the links into the tags wrapper */
       tagsWrapper.innerHTML = html;
       /* END LOOP: for every article: */
     }
-<<<<<<< HEAD
     /*[NEW] find list of tags in right column*/
     const tagList = document.querySelector('.tags');
     /*[NEW] create variable for all links HTML code*/
@@ -223,43 +195,6 @@
     generateTitleLinks('[data-tags~="' + tag + '" ]');
   }
 
-=======
-  }
-
-  generateTags();
-
-  function tagClickHandler(event) {
-    /* prevent default action for this event */
-    event.preventDefault();
-    /* make new constant named "clickedElement" and give it value of "this" */
-    const clickedElement = this;
-    /* make a new constant "href" and read the attribute "href" of clicked element */
-    const href = clickedElement.getAttribute('href');
-
-    /* make a new constant "tag" extract tag from the "href" constant */
-    const tag = href.replace('#tag-', '');
-
-    /* find all tag links with class active */
-    const tagActiveLinks = document.querySelectorAll('a.active[href^="#tag-"]');
-    /* START LOOP: for each active tag link */
-    for (let tagActiveLink of tagActiveLinks) {
-      /* Remove class active */
-      tagActiveLink.classList.remove('active');
-      /* END LOOP: for each active tag link */
-    }
-    /* find all tag links with "href" attribute equal to the "href" constant */
-    const tagLinks = document.querySelectorAll('a[href="' + href + '"]');
-    /* START LOOP: for each found tag link */
-    for (let tagLink of tagLinks) {
-      /* add class active */
-      tagLink.classList.add('active');
-      /* END LOOP: for each found tag link */
-    }
-    /* execute function "generateTitleLinks" with article selector as argument */
-    generateTitleLinks('[data-tags~="' + tag + '" ]');
-  }
-
->>>>>>> ab5d37b5bb0e4846c04e67d0636c73ca0a2a7c08
   function addClickListtenersToTag() {
     /* find all links to tags */
     const linksToTag = document.querySelectorAll('.post-tags .list a');
@@ -272,10 +207,6 @@
   }
   addClickListtenersToTag();
 
-<<<<<<< HEAD
-=======
-
->>>>>>> ab5d37b5bb0e4846c04e67d0636c73ca0a2a7c08
   function generateAuthor() {
     /* find all articles */
     const articles = document.querySelectorAll(optArticleSelector);
