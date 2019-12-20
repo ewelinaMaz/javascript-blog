@@ -63,7 +63,7 @@
       /*[DONE]insert html into titleList*/
       html = html + linkHTML;
       console.log(optArticleSelector + customSelector);
-      /*[insertAdjacentHTML-generuje listę linkó od tyłu?]titleList.insertAdjacentHTML('afterbegin', linkHTML)*/
+  /*[insertAdjacentHTML-generuje listę linkó od tyłu?]titleList.insertAdjacentHTML('afterbegin', linkHTML)*/
     }
     titleList.innerHTML = html;
 
@@ -162,7 +162,6 @@
     tagList.innerHTML = allTagsHTML;
     console.log(allTags);
   }
-
   generateTags();
 
   function tagClickHandler(event) {
