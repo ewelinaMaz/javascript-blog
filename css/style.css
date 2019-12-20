@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,600|Sacramento|Source+Sans+Pro:300&subset=latin-ext");
 /* Variables */
 /* Global */
-*, *::before, *::after {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -49,7 +51,8 @@ body {
       flex: 2 0 0;
 }
 
-.sidebar, .posts {
+.posts,
+.sidebar {
   background: #fff;
   margin-right: 10px;
   padding: 40px;
@@ -121,5 +124,9 @@ body {
 
 .post-tags p {
   margin: 0 10px 0 0;
+}
+
+.post-tags ul li {
+  margin-right: 5px;
 }
 /*# sourceMappingURL=style.css.map */
