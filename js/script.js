@@ -62,13 +62,13 @@
       /*[insertAdjacentHTML-generuje listę linkó od tyłu?]titleList.insertAdjacentHTML('afterbegin', linkHTML)*/
     }
     titleList.innerHTML = html;
-  }
+ 
+		const links = document.querySelectorAll('.titles a');
+  	for (let link of links) {
+    	link.addEventListener('click', titleClickHandler);
+  	}
+	}
   generateTitleLinks();
-
-  const links = document.querySelectorAll('.titles a');
-  for (let link of links) {
-    link.addEventListener('click', titleClickHandler);
-  }
 
   function generateTags() {
 
