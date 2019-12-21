@@ -85,7 +85,6 @@ body {
 
 .list li a {
   text-decoration: none;
-  color: #000000;
 }
 
 .list-horizontal li {
@@ -128,5 +127,49 @@ body {
 
 .post-tags ul li {
   margin-right: 5px;
+}
+
+.sidebar .tags li {
+  display: inline;
+}
+
+.tag-size-1 {
+  font-size: 16px;
+  display: inline-block;
+  padding: 0 5px;
+  color: #4D6D9B;
+}
+
+.tag-size-2 {
+  font-size: 20px;
+  display: inline-block;
+  padding: 0 5px;
+  color: #9B4D6D;
+}
+
+.tag-size-3 {
+  font-size: 28px;
+  display: inline-block;
+  padding: 0 5px;
+  color: #6D9B4D;
+}
+
+.tag-size-4 {
+  font-size: 32px;
+  display: inline-block;
+  padding: 0 5px;
+  color: #7B4D9B;
+}
+
+.tag-size-5 {
+  font-size: 40px;
+  display: inline-block;
+  padding: 0 5px;
+  color: #4D949B;
+}
+
+.author {
+  font-size: 20px;
+  color: #4D949B;
 }
 /*# sourceMappingURL=style.css.map */
