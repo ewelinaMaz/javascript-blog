@@ -15,16 +15,7 @@
       <aside class="sidebar">
         <h2 class="section-title">All posts</h2>
         <ul class="list titles">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+
         </ul>
       </aside>
       <section class="posts">
@@ -201,6 +192,26 @@
     </main>
   </div>
 </div>
+<script id="template-cloud-tag-link" type="text/x-handlebars-template">
+  {{#each tags}}
+  <li><a href= "#tag-{{ tag }}" class="tag-size-{{ className }}">{{ tag }}</a></li>
+  {{/each}}
+</script>
+<script id="template-side-author-link" type="text/x-handlebars-template">
+  {{#each author}}
+  <li><a href= "#author-{{ author }}" class="author">{{ author + count}}</a></li>
+  {{/author}}
+</script>
+<script id="template-article-link" type="text/x-handlebars-template">
+  <li><a href="#{{ id }}"><span>{{ title }}</span></a></li>
+</script>
+<script id="template-tags-link" type="text/x-handlebars-template">
+  <li><a href="#tag-{{ id }}">{{ title }}</a></li>
+</script>
+<script id="template-author-link" type="text/x-handlebars-template">
+  <p><a href="#author-{{ id }}">{{ title }}</a></p>
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 
