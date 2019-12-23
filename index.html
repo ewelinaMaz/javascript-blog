@@ -198,9 +198,9 @@
   {{/each}}
 </script>
 <script id="template-side-author-link" type="text/x-handlebars-template">
-  {{#each author}}
-  <li><a href= "#author-{{ author }}" class="author">{{ author + count}}</a></li>
-  {{/author}}
+  {{#each authors}}
+  <li><a href= "#author-{{ author }}" class= {{className}}>{{ author }}  {{count}}</a></li>
+  {{/each}}
 </script>
 <script id="template-article-link" type="text/x-handlebars-template">
   <li><a href="#{{ id }}"><span>{{ title }}</span></a></li>
